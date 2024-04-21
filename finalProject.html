@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WEB-115 Final Project</title>
+  <script src="projectJS.js" defer></script>
+  <style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    body {
+        background-color: #c5e9e5;
+        color: #02049B;
+    }
+  </style>
+</head>
+<header>
+    <img src="bannerImage.png" alt="banner">
+</header>
+<body>
+    <h2>Meal Plan Form</h2>
+
+    <form id="mealPlan">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="goal">Goal:&nbsp;&nbsp;</label>
+      <input type="text" id="goal" name="goal"><br><br>
+      <table>
+        <tr>
+          <th></th>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <th>Breakfast</th>
+          <td><input id="Breakfast1" type="text" name="Breakfast1"></td>
+          <td><input id="Breakfast2" type="text" name="Breakfast2"></td>
+          <td><input id="Breakfast3" type="text" name="Breakfast3"></td>
+          <td><input id="Breakfast4" type="text" name="Breakfast4"></td>
+          <td><input id="Breakfast5" type="text" name="Breakfast5"></td>
+          <td><input id="Breakfast6" type="text" name="Breakfast6"></td>
+          <td><input id="Breakfast7" type="text" name="Breakfast7"></td>
+        </tr>
+        <tr>
+          <th>Snack</th>
+          <td><input id="mSnack1" type="text" name="mSnack1"></td>
+          <td><input id="mSnack2" type="text" name="mSnack2"></td>
+          <td><input id="mSnack3" type="text" name="mSnack3"></td>
+          <td><input id="mSnack4" type="text" name="mSnack4"></td>
+          <td><input id="mSnack5" type="text" name="mSnack5"></td>
+          <td><input id="mSnack6" type="text" name="mSnack6"></td>
+          <td><input id="mSnack7" type="text" name="mSnack7"></td>
+        </tr>
+        <tr>
+          <th>Lunch</th>
+          <td><input id="Lunch1" type="text" name="Lunch1"></td>
+          <td><input id="Lunch2" type="text" name="Lunch2"></td>
+          <td><input id="Lunch3" type="text" name="Lunch3"></td>
+          <td><input id="Lunch4" type="text" name="Lunch4"></td>
+          <td><input id="Lunch5" type="text" name="Lunch5"></td>
+          <td><input id="Lunch6" type="text" name="Lunch6"></td>
+          <td><input id="Lunch7" type="text" name="Lunch7"></td>
+        </tr>
+        <tr>
+          <th>Snack</th>
+          <td><input id="eSnack1" type="text" name="eSnack1"></td>
+          <td><input id="eSnack2" type="text" name="eSnack2"></td>
+          <td><input id="eSnack3" type="text" name="eSnack3"></td>
+          <td><input id="eSnack4" type="text" name="eSnack4"></td>
+          <td><input id="eSnack5" type="text" name="eSnackh5"></td>
+          <td><input id="eSnack6" type="text" name="eSnack6"></td>
+          <td><input id="eSnack7" type="text" name="eSnack7"></td>
+        </tr>
+        <tr>
+          <th>Dinner</th>
+          <td><input id="Dinner1" type="text" name="Dinner1"></td>
+          <td><input id="Dinner2" type="text" name="Dinner2"></td>
+          <td><input id="Dinner3" type="text" name="Dinner3"></td>
+          <td><input id="Dinner4" type="text" name="Dinner4"></td>
+          <td><input id="Dinner5" type="text" name="Dinner5"></td>
+          <td><input id="Dinner6" type="text" name="Dinner6"></td>
+          <td><input id="Dinner7" type="text" name="Dinner7"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td style="text-align: right;">
+            <button type="button" id="clearButton">Clear Form</button>
+            <button type="button" id="submitButton">Submit</button>
+          </td>
+          </tr>
+      </table>
+    </form>
+    
+</body>
+</html>
