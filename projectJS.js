@@ -117,6 +117,6 @@ function myWindow() {
 
 document.getElementById("clearButton").addEventListener('click', clearForm);
 function clearForm() {
-    var form = document.getElementById("mealPlan");
-    form.reset();
+    var mealform = document.getElementById("mealPlan");
+    mealform.reset();
 }
