@@ -2,6 +2,7 @@
 
 document.getElementById("submitButton").addEventListener('click', myWindow);
 
+
 // Create the myWindow function, which creates a styled popup window with the meal plan form inputs.
 
 function myWindow() {
@@ -51,46 +52,152 @@ function myWindow() {
     }
 
     // Get all the inputs from the Meal Plan table form.
+    // Make sure commas do not split inputs for the CSV
 
     let breakfast1 = document.getElementById("Breakfast1").value;
+    if (breakfast1.includes(',')) {
+        breakfast1 = `"${breakfast1}"`;
+    }
     let breakfast2 = document.getElementById("Breakfast2").value;
+    if (breakfast2.includes(',')) {
+        breakfast2 = `"${breakfast2}"`;
+    }
     let breakfast3 = document.getElementById("Breakfast3").value;
+    if (breakfast3.includes(',')) {
+        breakfast3 = `"${breakfast3}"`;
+    }
     let breakfast4 = document.getElementById("Breakfast4").value;
+    if (breakfast4.includes(',')) {
+        breakfast4 = `"${breakfast4}"`;
+    }
     let breakfast5 = document.getElementById("Breakfast5").value;
+    if (breakfast5.includes(',')) {
+        breakfast5 = `"${breakfast5}"`;
+    }
     let breakfast6 = document.getElementById("Breakfast6").value;
+    if (breakfast6.includes(',')) {
+        breakfast6 = `"${breakfast6}"`;
+    }
     let breakfast7 = document.getElementById("Breakfast7").value;
+    if (breakfast7.includes(',')) {
+        breakfast7 = `"${breakfast7}"`;
+    }
 
     let mSnack1 = document.getElementById("mSnack1").value;
+    if (mSnack1.includes(',')) {
+        mSnack1 = `"${mSnack1}"`;
+    }
     let mSnack2 = document.getElementById("mSnack2").value;
+    if (mSnack2.includes(',')) {
+        mSnack2 = `"${mSnack2}"`;
+    }
     let mSnack3 = document.getElementById("mSnack3").value;
+    if (mSnack3.includes(',')) {
+        mSnack3 = `"${mSnack3}"`;
+    }
     let mSnack4 = document.getElementById("mSnack4").value;
+    if (mSnack4.includes(',')) {
+        mSnack4 = `"${mSnack4}"`;
+    }
     let mSnack5 = document.getElementById("mSnack5").value;
+    if (mSnack5.includes(',')) {
+        mSnack5 = `"${mSnack5}"`;
+    }
     let mSnack6 = document.getElementById("mSnack6").value;
+    if (mSnack6.includes(',')) {
+        mSnack6 = `"${mSnack6}"`;
+    }
     let mSnack7 = document.getElementById("mSnack7").value;
+    if (mSnack7.includes(',')) {
+        mSnack7 = `"${mSnack7}"`;
+    }
     
     let lunch1 = document.getElementById("Lunch1").value;
+    if (lunch1.includes(',')) {
+        lunch1 = `"${lunch1}"`;
+    }
     let lunch2 = document.getElementById("Lunch2").value;
+    if (lunch2.includes(',')) {
+        lunch2 = `"${lunch2}"`;
+    }
     let lunch3 = document.getElementById("Lunch3").value;
+    if (lunch3.includes(',')) {
+        lunch3 = `"${lunch3}"`;
+    }
     let lunch4 = document.getElementById("Lunch4").value;
+    if (lunch4.includes(',')) {
+        lunch4 = `"${lunch4}"`;
+    }
     let lunch5 = document.getElementById("Lunch5").value;
+    if (lunch5.includes(',')) {
+        lunch5 = `"${lunch5}"`;
+    }
     let lunch6 = document.getElementById("Lunch6").value;
+    if (lunch6.includes(',')) {
+        lunch6 = `"${lunch6}"`;
+    }
     let lunch7 = document.getElementById("Lunch7").value;
+    if (lunch7.includes(',')) {
+        lunch7 = `"${lunch7}"`;
+    }
 
     let eSnack1 = document.getElementById("eSnack1").value;
+    if (eSnack1.includes(',')) {
+        eSnack1 = `"${eSnack1}"`;
+    }
     let eSnack2 = document.getElementById("eSnack2").value;
+    if (eSnack2.includes(',')) {
+        eSnack2 = `"${eSnack2}"`;
+    }
     let eSnack3 = document.getElementById("eSnack3").value;
+    if (eSnack3.includes(',')) {
+        eSnack3 = `"${eSnack3}"`;
+    }
     let eSnack4 = document.getElementById("eSnack4").value;
+    if (eSnack4.includes(',')) {
+        eSnack4 = `"${eSnack4}"`;
+    }
     let eSnack5 = document.getElementById("eSnack5").value;
+    if (eSnack5.includes(',')) {
+        eSnack5 = `"${eSnack5}"`;
+    }
     let eSnack6 = document.getElementById("eSnack6").value;
+    if (eSnack6.includes(',')) {
+        eSnack6 = `"${eSnack6}"`;
+    }
     let eSnack7 = document.getElementById("eSnack7").value;
+    if (eSnack7.includes(',')) {
+        eSnack7 = `"${eSnack7}"`;
+    }
 
     let dinner1 = document.getElementById("Dinner1").value;
+    if (dinner1.includes(',')) {
+        dinner1 = `"${dinner1}"`;
+    }
     let dinner2 = document.getElementById("Dinner2").value;
+    if (dinner2.includes(',')) {
+        dinner2 = `"${dinner2}"`;
+    }
     let dinner3 = document.getElementById("Dinner3").value;
+    if (dinner3.includes(',')) {
+        dinner3 = `"${dinner3}"`;
+    }
     let dinner4 = document.getElementById("Dinner4").value;
+    if (dinner4.includes(',')) {
+        dinner4 = `"${dinner4}"`;
+    }
     let dinner5 = document.getElementById("Dinner5").value;
+    if (dinner5.includes(',')) {
+        dinner5 = `"${dinner5}"`;
+    }
     let dinner6 = document.getElementById("Dinner6").value;
+    if (dinner6.includes(',')) {
+        dinner6 = `"${dinner6}"`;
+    }
     let dinner7 = document.getElementById("Dinner7").value;
+    if (dinner7.includes(',')) {
+        dinner7 = `"${dinner7}"`;
+    }
 
     // Use all inputs to create a comma-separated string.
     // (This will be used to create a CSV file for download)
